@@ -3,8 +3,14 @@
 	import InvertedButton from '$lib/components/shared/InvertedButton.svelte';
 
 	function connectWallet() {
-		alert('Coming soon!');
+		// alert('Coming soon!');
+		showT = true;
+		setTimeout(() => {
+			showT = false;
+		}, 2000);
 	}
+
+	let showT = false;
 </script>
 
 <div class="content">
@@ -13,7 +19,11 @@
 	<div class="section section-title">
 		<h1>Undead Doodles</h1>
 
-		<InvertedButton on:click={connectWallet}>CONNECT WALLET</InvertedButton>
+		<div class="hiding-button">
+			<InvertedButton on:click={connectWallet}
+				>{showT ? 'COMING SOON!' : 'CONNECT WALLET'}</InvertedButton
+			>
+		</div>
 	</div>
 
 	<div class="section">

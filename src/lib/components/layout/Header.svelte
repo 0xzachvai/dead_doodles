@@ -1,13 +1,20 @@
 <script>
 	import Button from '../shared/Button.svelte';
 
+	let showComingSoon = false;
+
 	function joinDiscord() {
-		alert('Discord coming soon!');
+		showComingSoon = true;
+
+		setTimeout(() => {
+			showComingSoon = false;
+		}, 2000);
+		// alert('Discord coming soon!');
 	}
 </script>
 
 <header>
-	<Button on:click={joinDiscord}>JOIN OUR DISCORD</Button>
+	<Button on:click={joinDiscord}>{showComingSoon ? 'COMING SOON!' : 'JOIN OUR DISCORD'}</Button>
 
 	<div class="icons">
 		<button

@@ -2,6 +2,8 @@
 
 <style lang="scss">
 	button {
+		transition: all 0.3s;
+
 		cursor: pointer;
 		width: fit-content;
 
