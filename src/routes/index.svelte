@@ -11,13 +11,13 @@
 	<Header />
 
 	<div class="section section-title">
-		<h1>Dead Doodles</h1>
+		<h1>Undead Doodles</h1>
 
 		<InvertedButton on:click={connectWallet}>CONNECT WALLET</InvertedButton>
 	</div>
 
 	<div class="section">
-		<h3>A COLLECTION OF 3,333 DEAD DOODLE NFTS ON THE ETHEREUM BLOCKCHAIN</h3>
+		<h3>A COLLECTION OF 3,333 UNDEAD DOODLE NFTS ON THE ETHEREUM BLOCKCHAIN</h3>
 		<div class="nft-row">
 			<img src="/favicon.png" />
 			<img src="/favicon.png" />
@@ -43,7 +43,7 @@
 
 		<div>
 			<img src="/bone-solid.png" />
-			<p>DEAD DOODLES LAUNCH – 1,000 FREE MINTS, 3,333 TOTAL</p>
+			<p>UNDEAD DOODLES LAUNCH – 1,000 FREE MINTS, 3,333 TOTAL</p>
 		</div>
 
 		<div>
@@ -58,7 +58,7 @@
 	</div>
 
 	<div class="section section-team">
-		<h2>Dead Team</h2>
+		<h2>Undead Team</h2>
 
 		<div class="team-row-one">
 			<div class="teammate">
