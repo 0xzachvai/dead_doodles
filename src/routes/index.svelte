@@ -241,8 +241,11 @@
 
 		div {
 			display: flex;
-			flex-flow: row wrap;
 			align-items: center;
+
+			@media screen and (max-width: 720px) {
+				flex-flow: row wrap;
+			}
 
 			img {
 				width: 200px;
