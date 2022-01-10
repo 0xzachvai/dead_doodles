@@ -245,6 +245,7 @@
 
 			@media screen and (max-width: 720px) {
 				flex-flow: row wrap;
+				justify-content: center;
 			}
 
 			img {
