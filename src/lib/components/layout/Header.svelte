@@ -12,14 +12,23 @@
 	<div class="icons">
 		<button
 			on:click={() => {
+				alert('Coming soon!');
+				// open('https://twitter.com', 'blank');
+			}}
+		>
+			<img src="/icons/opensea.png" width="24px" />
+		</button>
+
+		<div style="width: 32px;" />
+
+		<button
+			on:click={() => {
 				open('https://twitter.com', 'blank');
 			}}
 		>
 			<img src="/icons/twitter.svg" width="24px" />
 		</button>
 		<!-- <Button circular={true}><img src="/icons/twitter.svg" width="48px" height="48px" /></Button> -->
-		<!-- <div style="width: 32px;" />
-		<Button circular={true}><img src="/icons/twitter.svg" width="24px" /></Button> -->
 	</div>
 </header>
 
@@ -43,7 +52,7 @@
 
 		border: 4px solid #92d050;
 		border-radius: 50%;
-		padding-top: 8px;
+		padding-top: 6px;
 
 		width: 69px;
 		height: 69px;
