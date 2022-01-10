@@ -23,5 +23,10 @@
 
 		// specific to index
 		margin-top: -56px;
+
+		@media screen and (max-width: 720px) {
+			margin-top: 32px;
+			font-size: 32px;
+		}
 	}
 </style>

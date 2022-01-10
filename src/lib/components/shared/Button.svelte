@@ -19,5 +19,9 @@
 			padding: 16px;
 			border-radius: 50%;
 		}
+
+		@media screen and (max-width: 720px) {
+			font-size: 20px;
+		}
 	}
 </style>

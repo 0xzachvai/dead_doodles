@@ -33,8 +33,8 @@
 
 		<div class="tombstone-row">
 			<img src="/tombstone.jpeg" />
-			<img src="/tombstone.jpeg" />
-			<img src="/tombstone.jpeg" />
+			<img class="desktop-only" src="/tombstone.jpeg" />
+			<img class="desktop-only" src="/tombstone.jpeg" />
 		</div>
 	</div>
 
@@ -91,7 +91,7 @@
 		</div>
 	</div>
 
-	<h2>Join the dead <br /> doodle community</h2>
+	<h2>Join the undead <br /> doodle community</h2>
 </div>
 
 <style lang="scss">
@@ -121,16 +121,34 @@
 		max-width: 1200px;
 	}
 
+	.desktop-only {
+		@media screen and (max-width: 720px) {
+			display: none;
+		}
+	}
+
 	h1 {
 		font-size: 140px;
+
+		@media screen and (max-width: 720px) {
+			font-size: 72px;
+		}
 	}
 
 	h2 {
 		font-size: 104px;
+
+		@media screen and (max-width: 720px) {
+			font-size: 52px;
+		}
 	}
 
 	h3 {
 		font-size: 56px;
+
+		@media screen and (max-width: 720px) {
+			font-size: 32px;
+		}
 	}
 
 	.section {
@@ -139,6 +157,10 @@
 		align-items: stretch;
 
 		padding: 0 32px;
+
+		@media screen and (max-width: 720px) {
+			padding: 0 24px;
+		}
 	}
 
 	.section-title {
@@ -201,10 +223,15 @@
 	.section-roadmap {
 		h2 {
 			margin-bottom: 8px;
+
+			@media screen and (max-width: 720px) {
+				margin-bottom: 32px;
+			}
 		}
 
 		div {
 			display: flex;
+			flex-flow: row wrap;
 			align-items: center;
 
 			img {
@@ -215,6 +242,11 @@
 			p {
 				font-size: 40px;
 				text-align: start;
+
+				@media screen and (max-width: 720px) {
+					font-size: 24px;
+					text-align: center;
+				}
 			}
 		}
 	}

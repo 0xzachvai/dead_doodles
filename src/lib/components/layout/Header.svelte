@@ -19,7 +19,7 @@
 			<img src="/icons/opensea.png" width="24px" />
 		</button>
 
-		<div style="width: 32px;" />
+		<div style="width: 16px;" />
 
 		<button
 			on:click={() => {
@@ -38,7 +38,7 @@
 		align-items: center;
 		justify-content: space-between;
 
-		padding: 32px;
+		padding: 32px 16px;
 	}
 
 	.icons {
@@ -54,12 +54,12 @@
 		border-radius: 50%;
 		padding-top: 6px;
 
-		width: 69px;
-		height: 69px;
+		width: 56px;
+		height: 56px;
 
 		img {
-			width: 36px;
-			height: 36px;
+			width: 28px;
+			height: 28px;
 		}
 	}
 </style>
