@@ -1,4 +1,5 @@
 <script>
+	import Footer from '$lib/components/layout/Footer.svelte';
 	import Header from '$lib/components/layout/Header.svelte';
 	import InvertedButton from '$lib/components/shared/InvertedButton.svelte';
 
@@ -38,8 +39,8 @@
 	<div class="section section-undead">
 		<h2>Free or Paid... Undead</h2>
 
-		<h3>10 PAID MINTS PER WALLET – 3,333 LIMIT</h3>
-		<h3>1 FREE MINT PER WALLET – 1,000 LIMIT</h3>
+		<h3 style="color: white">10 PAID MINTS PER WALLET – 3,333 LIMIT</h3>
+		<h3 style="color: white">1 FREE MINT PER WALLET – 1,000 LIMIT</h3>
 
 		<div class="tombstone-row">
 			<img src="/tombstone.jpeg" />
@@ -53,17 +54,19 @@
 
 		<div>
 			<img src="/bone-solid.png" />
-			<p>UNDEAD DOODLES LAUNCH – 1,000 FREE MINTS, 3,333 TOTAL</p>
+			<p style="color: white">UNDEAD DOODLES LAUNCH – 1,000 FREE MINTS, 3,333 TOTAL</p>
 		</div>
 
 		<div>
 			<img src="/bone.png" />
-			<p>OPENSEA ROYALTY DONATION – WEEKLY ROYALTY DONATION TO DISCORD MEMBER</p>
+			<p style="color: white">
+				OPENSEA ROYALTY DONATION – WEEKLY ROYALTY DONATION TO DISCORD MEMBER
+			</p>
 		</div>
 
 		<div>
 			<img src="/bone.png" />
-			<p>INVESTING IN COMMUNITY PROJECTS</p>
+			<p style="color: white">INVESTING IN COMMUNITY PROJECTS</p>
 		</div>
 	</div>
 
@@ -100,9 +103,9 @@
 			</div>
 		</div>
 	</div>
-
-	<h2>Join the undead <br /> doodle community</h2>
 </div>
+
+<Footer />
 
 <style lang="scss">
 	@font-face {

@@ -5,11 +5,9 @@
 
 	function joinDiscord() {
 		showComingSoon = true;
-
 		setTimeout(() => {
 			showComingSoon = false;
 		}, 2000);
-		// alert('Discord coming soon!');
 	}
 </script>
 
@@ -61,8 +59,8 @@
 		border-radius: 50%;
 		padding-top: 6px;
 
-		width: 56px;
-		height: 56px;
+		width: 60px;
+		height: 60px;
 
 		img {
 			width: 28px;
