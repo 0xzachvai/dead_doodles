@@ -4,7 +4,6 @@
 	import InvertedButton from '$lib/components/shared/InvertedButton.svelte';
 
 	function connectWallet() {
-		// alert('Coming soon!');
 		showT = true;
 		setTimeout(() => {
 			showT = false;
@@ -25,14 +24,17 @@
 				>{showT ? 'COMING SOON!' : 'CONNECT WALLET'}</InvertedButton
 			>
 		</div>
+
+		<img class="left" src="/deaddoodle2.png" />
+		<img class="right" src="/deaddoodle2b.png" />
 	</div>
 
 	<div class="section">
 		<h3>A COLLECTION OF 3,333 UNDEAD DOODLE NFTS ON THE ETHEREUM BLOCKCHAIN</h3>
 		<div class="nft-row">
-			<img src="/favicon.png" />
-			<img src="/favicon.png" />
-			<img src="/favicon.png" />
+			<img src="/deaddoodle.jpeg" />
+			<img src="/deaddoodle.jpeg" />
+			<img src="/deaddoodle.jpeg" />
 		</div>
 	</div>
 
@@ -75,31 +77,31 @@
 
 		<div class="team-row-one">
 			<div class="teammate">
-				<img src="/favicon.png" />
+				<img src="/deaddoodle.jpeg" />
 				<div>
-					<p>ZAIN</p>
+					<p>ZEEKO</p>
 				</div>
 			</div>
 			<div class="teammate">
-				<img src="/favicon.png" />
-				<p>MAG</p>
+				<img src="/deaddoodle.jpeg" />
+				<p>MANGNUM</p>
 			</div>
 			<div class="teammate">
-				<img src="/favicon.png" />
+				<img src="/deaddoodle.jpeg" />
 				<p>ZAID</p>
 			</div>
 		</div>
 
 		<div class="team-row-two">
 			<div class="teammate">
-				<img src="/favicon.png" />
+				<img src="/deaddoodle.jpeg" />
 				<div>
-					<p>RAKAN</p>
+					<p>ROSARIO</p>
 				</div>
 			</div>
 			<div class="teammate">
-				<img src="/favicon.png" />
-				<p>JAD</p>
+				<img src="/deaddoodle.jpeg" />
+				<p>CASHAWI</p>
 			</div>
 		</div>
 	</div>
@@ -125,6 +127,7 @@
 		font-family: 'Franxurter', Helvetica, sans-serif;
 		text-transform: uppercase;
 	}
+
 	:global(h1, h2, h3, p) {
 		line-height: 1.25;
 	}
@@ -179,6 +182,42 @@
 	.section-title {
 		align-items: center;
 		padding-bottom: 240px;
+		margin-bottom: -160px;
+
+		height: calc(100vh - 120px);
+
+		position: relative;
+
+		h1 {
+			margin-top: 32px;
+		}
+
+		img {
+			position: absolute;
+			bottom: 30vh;
+
+			height: 25vh;
+
+			&.left {
+				left: 10vw;
+			}
+
+			&.right {
+				right: 10vw;
+			}
+
+			@media screen and (max-width: 720px) {
+				height: 18vh;
+
+				&.left {
+					left: 2vw;
+				}
+
+				&.right {
+					right: 2vw;
+				}
+			}
+		}
 	}
 
 	.nft-row {
@@ -192,7 +231,7 @@
 			flex-grow: 1;
 
 			min-width: 256px;
-			max-width: 356px; // empirical
+			max-width: 300px; // empirical
 			// width: 100%;
 
 			border: 3px solid #92d050;
@@ -295,6 +334,7 @@
 
 			flex-grow: 1;
 			min-width: 280px;
+			max-width: 300px;
 
 			margin: 32px;
 

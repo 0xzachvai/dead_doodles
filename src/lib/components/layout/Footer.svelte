@@ -14,7 +14,7 @@
 <div class="container">
 	<div class="content">
 		<h2>Join the undead community</h2>
-		<h4>0x123123123123123</h4>
+		<h4>contract coming soon</h4>
 
 		<div class="row">
 			<Button inverted={true} on:click={joinDiscord}
