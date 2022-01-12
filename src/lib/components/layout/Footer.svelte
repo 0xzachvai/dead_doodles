@@ -37,7 +37,7 @@
 
 				<button
 					on:click={() => {
-						open('https://twitter.com', 'blank');
+						open('https://twitter.com/undeaddoodles', 'blank');
 					}}
 				>
 					<img src="/icons/twitter.svg" width="24px" />
