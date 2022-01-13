@@ -37,7 +37,7 @@
 			<div class="nft-row">
 				<img src="/nfts/nft7.jpeg" />
 				<img src="/nfts/nft6.jpeg" />
-				<img src="/nfts/nft8.jpeg" />
+				<img src="/nfts/nft3.jpeg" />
 			</div>
 		</div>
 	</Content>
@@ -87,17 +87,15 @@
 		<div class="team-row-one">
 			<div class="teammate">
 				<img src="/nfts/nft5.jpeg" />
-				<div>
-					<p>ZOOZ</p>
-				</div>
+				<p>ZOOZ</p>
 			</div>
 			<div class="teammate">
 				<img src="/nfts/nft4.jpeg" />
 				<p>Minccino</p>
 			</div>
 			<div class="teammate">
-				<img src="/nfts/nft3.jpeg" />
-				<p>ZAID</p>
+				<img src="/nfts/nft8.jpeg" />
+				<p>ZAH</p>
 			</div>
 		</div>
 
