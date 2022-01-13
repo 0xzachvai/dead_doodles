@@ -102,9 +102,7 @@
 		<div class="team-row-two">
 			<div class="teammate">
 				<img src="/nfts/nft1.jpeg" />
-				<div>
-					<p>ROSARIO</p>
-				</div>
+				<p>ROSARIO</p>
 			</div>
 			<div class="teammate">
 				<img src="/nfts/nft2.jpeg" />
@@ -312,6 +310,10 @@
 			img {
 				width: 200px;
 				margin: 0 64px;
+
+				@media screen and (max-width: 720px) {
+					width: 50%;
+				}
 			}
 
 			p {
@@ -345,6 +347,10 @@
 			justify-content: space-around;
 			padding: 0 calc(33% / 2);
 
+			@media screen and (max-width: 720px) {
+				padding: 0;
+			}
+
 			margin: 0 -16px;
 		}
 
@@ -356,6 +362,10 @@
 			max-width: 300px;
 
 			margin: 32px;
+
+			@media screen and (max-width: 720px) {
+				margin: 32px 16px;
+			}
 
 			img {
 				width: 100%;
