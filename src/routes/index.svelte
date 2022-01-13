@@ -33,7 +33,7 @@
 <div class="background-two">
 	<Content>
 		<div class="section">
-			<h3>A COLLECTION OF 3,333 UNDEAD DOODLE NFTS ON THE ETHEREUM BLOCKCHAIN</h3>
+			<h3>A COLLECTION OF 4,000 UNDEAD DOODLE NFTS ON THE ETHEREUM BLOCKCHAIN</h3>
 			<div class="nft-row">
 				<img src="/deaddoodle.jpeg" />
 				<img src="/deaddoodle.jpeg" />
@@ -93,7 +93,7 @@
 			</div>
 			<div class="teammate">
 				<img src="/deaddoodle.jpeg" />
-				<p>MANGNUM</p>
+				<p>Minccino</p>
 			</div>
 			<div class="teammate">
 				<img src="/deaddoodle.jpeg" />
