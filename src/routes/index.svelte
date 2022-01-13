@@ -277,6 +277,7 @@
 
 	.section-roadmap {
 		h2 {
+			color: #262d37;
 			margin-bottom: 8px;
 
 			@media screen and (max-width: 720px) {
