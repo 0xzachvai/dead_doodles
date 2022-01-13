@@ -35,9 +35,9 @@
 		<div class="section">
 			<h3>A COLLECTION OF 4,000 UNDEAD DOODLE NFTS ON THE ETHEREUM BLOCKCHAIN</h3>
 			<div class="nft-row">
-				<img src="/deaddoodle.jpeg" />
-				<img src="/deaddoodle.jpeg" />
-				<img src="/deaddoodle.jpeg" />
+				<img src="/nfts/nft7.jpeg" />
+				<img src="/nfts/nft6.jpeg" />
+				<img src="/nfts/nft8.jpeg" />
 			</div>
 		</div>
 	</Content>
@@ -86,30 +86,30 @@
 
 		<div class="team-row-one">
 			<div class="teammate">
-				<img src="/deaddoodle.jpeg" />
+				<img src="/nfts/nft5.jpeg" />
 				<div>
 					<p>ZOOZ</p>
 				</div>
 			</div>
 			<div class="teammate">
-				<img src="/deaddoodle.jpeg" />
+				<img src="/nfts/nft4.jpeg" />
 				<p>Minccino</p>
 			</div>
 			<div class="teammate">
-				<img src="/deaddoodle.jpeg" />
+				<img src="/nfts/nft3.jpeg" />
 				<p>ZAID</p>
 			</div>
 		</div>
 
 		<div class="team-row-two">
 			<div class="teammate">
-				<img src="/deaddoodle.jpeg" />
+				<img src="/nfts/nft1.jpeg" />
 				<div>
 					<p>ROSARIO</p>
 				</div>
 			</div>
 			<div class="teammate">
-				<img src="/deaddoodle.jpeg" />
+				<img src="/nfts/nft2.jpeg" />
 				<p>CASHAWI</p>
 			</div>
 		</div>
