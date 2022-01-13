@@ -174,6 +174,7 @@
 	.background-one {
 		background-image: url('/background1.jpeg');
 		background-position-y: bottom;
+		background-size: cover;
 	}
 
 	.background-two {
@@ -246,7 +247,7 @@
 		flex-flow: row wrap;
 
 		justify-content: space-around;
-		margin: 0 -16px;
+		// margin: 0 -32px;
 		margin-top: 32px;
 
 		img {
