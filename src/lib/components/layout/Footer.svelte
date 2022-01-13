@@ -88,7 +88,7 @@
 		margin-top: 16px;
 
 		@media screen and (max-width: 720px) {
-			font-size: 36px;
+			font-size: 26px;
 		}
 	}
 

@@ -50,7 +50,7 @@
 
 			<h3 style="color: white">SUPPLY OF 4,000 UNDEAD DOODLES</h3>
 			<h3 style="color: white">10 MINTS PER WALLET, FIRST 1,000 ARE FREE</h3>
-			<h3 style="color: white">REST ARE SOLD AT 0.015 ETH</h3>
+			<h3 style="color: white">REST ARE SOLD AT 0.019 ETH</h3>
 		</div>
 	</Content>
 </div>
@@ -88,7 +88,7 @@
 			<div class="teammate">
 				<img src="/deaddoodle.jpeg" />
 				<div>
-					<p>ZEEKO</p>
+					<p>ZOOZ</p>
 				</div>
 			</div>
 			<div class="teammate">
@@ -254,7 +254,10 @@
 
 			min-width: 256px;
 			max-width: 332px; // empirical
-			// width: 100%;
+
+			@media screen and (max-width: 720px) {
+				max-width: 80vw;
+			}
 
 			border: 3px solid #92d050;
 			border-radius: 32px;

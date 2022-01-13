@@ -62,8 +62,8 @@
 		border-radius: 50%;
 		padding-top: 6px;
 
-		width: 60px;
-		height: 60px;
+		width: 56px;
+		height: 56px;
 
 		img {
 			width: 28px;
