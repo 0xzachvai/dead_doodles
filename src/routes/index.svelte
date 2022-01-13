@@ -1,4 +1,5 @@
 <script>
+	import Content from '$lib/components/layout/Content.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 	import Header from '$lib/components/layout/Header.svelte';
 	import InvertedButton from '$lib/components/shared/InvertedButton.svelte';
@@ -13,66 +14,74 @@
 	let showT = false;
 </script>
 
-<div class="content">
-	<Header />
+<Header />
 
-	<div class="section section-title">
-		<h1>Undead Doodles</h1>
+<div class="background-one">
+	<Content>
+		<div class="section section-title">
+			<h1>Undead Doodles</h1>
 
-		<div class="hiding-button">
-			<InvertedButton on:click={connectWallet}
-				>{showT ? 'COMING SOON!' : 'CONNECT WALLET'}</InvertedButton
-			>
+			<div class="hiding-button">
+				<InvertedButton on:click={connectWallet}
+					>{showT ? 'COMING SOON!' : 'CONNECT WALLET'}</InvertedButton
+				>
+			</div>
 		</div>
+	</Content>
+</div>
 
-		<img class="left" src="/deaddoodle2.png" />
-		<img class="right" src="/deaddoodle2b.png" />
-	</div>
-
-	<div class="section">
-		<h3>A COLLECTION OF 3,333 UNDEAD DOODLE NFTS ON THE ETHEREUM BLOCKCHAIN</h3>
-		<div class="nft-row">
-			<img src="/deaddoodle.jpeg" />
-			<img src="/deaddoodle.jpeg" />
-			<img src="/deaddoodle.jpeg" />
+<div class="background-two">
+	<Content>
+		<div class="section">
+			<h3>A COLLECTION OF 3,333 UNDEAD DOODLE NFTS ON THE ETHEREUM BLOCKCHAIN</h3>
+			<div class="nft-row">
+				<img src="/deaddoodle.jpeg" />
+				<img src="/deaddoodle.jpeg" />
+				<img src="/deaddoodle.jpeg" />
+			</div>
 		</div>
-	</div>
+	</Content>
+</div>
 
-	<div class="section section-undead">
-		<h2>Free or Paid... Undead</h2>
+<div class="background-three">
+	<Content>
+		<div class="section section-undead">
+			<h2>Unleash the Undead</h2>
 
-		<h3 style="color: white">10 PAID MINTS PER WALLET – 3,333 LIMIT</h3>
-		<h3 style="color: white">1 FREE MINT PER WALLET – 1,000 LIMIT</h3>
-
-		<div class="tombstone-row">
-			<img src="/tombstone.jpeg" />
-			<img class="desktop-only" src="/tombstone.jpeg" />
-			<img class="desktop-only" src="/tombstone.jpeg" />
+			<h3 style="color: white">SUPPLY OF 4,000 UNDEAD DOODLES</h3>
+			<h3 style="color: white">10 MINTS PER WALLET, FIRST 1,000 ARE FREE</h3>
+			<h3 style="color: white">REST ARE SOLD AT 0.015 ETH</h3>
 		</div>
-	</div>
+	</Content>
+</div>
 
+<div class="background-four">
 	<div class="section section-roadmap">
-		<h2>Roadmap</h2>
+		<Content>
+			<h2>Roadmap</h2>
 
-		<div>
-			<img src="/bone-solid.png" />
-			<p style="color: white">UNDEAD DOODLES LAUNCH – 1,000 FREE MINTS, 3,333 TOTAL</p>
-		</div>
+			<div>
+				<img src="/bone-solid.png" />
+				<p style="color: white">UNDEAD DOODLES LAUNCH – 1,000 FREE MINTS, 3,333 TOTAL</p>
+			</div>
 
-		<div>
-			<img src="/bone.png" />
-			<p style="color: white">
-				OPENSEA ROYALTY DONATION – WEEKLY ROYALTY DONATION TO DISCORD MEMBER
-			</p>
-		</div>
+			<div>
+				<img src="/bone.png" />
+				<p style="color: white">
+					OPENSEA ROYALTY DONATION – WEEKLY ROYALTY DONATION TO DISCORD MEMBER
+				</p>
+			</div>
 
-		<div>
-			<img src="/bone.png" />
-			<p style="color: white">INVESTING IN COMMUNITY PROJECTS</p>
-		</div>
+			<div>
+				<img src="/bone.png" />
+				<p style="color: white">INVESTING IN COMMUNITY PROJECTS</p>
+			</div>
+		</Content>
 	</div>
+</div>
 
-	<div class="section section-team">
+<div class="section section-team">
+	<Content>
 		<h2>Undead Team</h2>
 
 		<div class="team-row-one">
@@ -104,7 +113,7 @@
 				<p>CASHAWI</p>
 			</div>
 		</div>
-	</div>
+	</Content>
 </div>
 
 <Footer />
@@ -130,11 +139,6 @@
 
 	:global(h1, h2, h3, p) {
 		line-height: 1.25;
-	}
-
-	.content {
-		margin: auto;
-		max-width: 1200px;
 	}
 
 	.desktop-only {
@@ -167,12 +171,32 @@
 		}
 	}
 
+	.background-one {
+		background-image: url('background1.jpeg');
+		background-position-y: bottom;
+	}
+
+	.background-two {
+		background-image: url('background2.jpeg');
+		background-repeat: repeat-y;
+	}
+
+	.background-three {
+		background-image: url('background3.jpeg');
+		background-position-y: bottom;
+	}
+
+	.background-four {
+		background-image: url('background4.jpeg');
+		background-repeat: repeat-y;
+	}
+
 	.section {
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
 
-		padding: 0 32px;
+		min-height: 95vh;
 
 		@media screen and (max-width: 720px) {
 			padding: 0 24px;
@@ -181,15 +205,12 @@
 
 	.section-title {
 		align-items: center;
-		padding-bottom: 240px;
-		margin-bottom: -160px;
-
-		height: calc(100vh - 120px);
+		height: calc(100vh - 129px);
 
 		position: relative;
 
 		h1 {
-			margin-top: 32px;
+			margin-top: 48px;
 		}
 
 		img {
@@ -226,49 +247,31 @@
 
 		justify-content: space-around;
 		margin: 0 -16px;
+		margin-top: 32px;
 
 		img {
 			flex-grow: 1;
 
 			min-width: 256px;
-			max-width: 300px; // empirical
+			max-width: 332px; // empirical
 			// width: 100%;
 
 			border: 3px solid #92d050;
 			border-radius: 32px;
 
-			margin: 32px;
+			margin: 32px 16px;
 		}
 	}
 
 	.section-undead {
-		margin-top: 32px;
-
 		h2 {
+			// margin-top: 16px;
 			margin-bottom: 48px;
 		}
 
 		h3 {
 			margin-top: 0;
 			margin-bottom: 32px;
-		}
-	}
-
-	.tombstone-row {
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		justify-content: center;
-
-		margin: 0 -16px;
-
-		img {
-			flex-grow: 1;
-			min-width: 256px;
-			width: 100%;
-			max-width: 356px; // empirical
-
-			margin: 16px;
 		}
 	}
 

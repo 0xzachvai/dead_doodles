@@ -1,5 +1,6 @@
 <script>
 	import Button from '../shared/Button.svelte';
+	import Content from './Content.svelte';
 
 	let showComingSoon = false;
 
@@ -11,31 +12,33 @@
 	}
 </script>
 
-<header>
-	<Button on:click={joinDiscord}>{showComingSoon ? 'COMING SOON!' : 'JOIN OUR DISCORD'}</Button>
+<Content>
+	<header>
+		<Button on:click={joinDiscord}>{showComingSoon ? 'COMING SOON!' : 'JOIN OUR DISCORD'}</Button>
 
-	<div class="icons">
-		<button
-			on:click={() => {
-				alert('Coming soon!');
-				// open('https://twitter.com', 'blank');
-			}}
-		>
-			<img src="/icons/opensea.png" width="24px" />
-		</button>
+		<div class="icons">
+			<button
+				on:click={() => {
+					alert('Coming soon!');
+					// open('https://twitter.com', 'blank');
+				}}
+			>
+				<img src="/icons/opensea.png" width="24px" />
+			</button>
 
-		<div style="width: 16px;" />
+			<div style="width: 16px;" />
 
-		<button
-			on:click={() => {
-				open('https://twitter.com/undeaddoodles', 'blank');
-			}}
-		>
-			<img src="/icons/twitter.svg" width="24px" />
-		</button>
-		<!-- <Button circular={true}><img src="/icons/twitter.svg" width="48px" height="48px" /></Button> -->
-	</div>
-</header>
+			<button
+				on:click={() => {
+					open('https://twitter.com/undeaddoodles', 'blank');
+				}}
+			>
+				<img src="/icons/twitter.svg" width="24px" />
+			</button>
+			<!-- <Button circular={true}><img src="/icons/twitter.svg" width="48px" height="48px" /></Button> -->
+		</div>
+	</header>
+</Content>
 
 <style lang="scss">
 	header {
