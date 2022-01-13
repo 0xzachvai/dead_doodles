@@ -260,7 +260,7 @@
 		img {
 			flex-grow: 1;
 
-			min-width: 280px;
+			min-width: 240px;
 			max-width: 300px;
 
 			margin: 32px;
@@ -358,7 +358,7 @@
 			position: relative;
 
 			flex-grow: 1;
-			min-width: 280px;
+			min-width: 240px;
 			max-width: 300px;
 
 			margin: 32px;
