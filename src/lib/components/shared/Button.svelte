@@ -33,6 +33,7 @@
 
 		@media screen and (max-width: 720px) {
 			font-size: 20px;
+			padding: 8px 12px;
 		}
 	}
 </style>

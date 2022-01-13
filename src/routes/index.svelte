@@ -145,6 +145,12 @@
 		}
 	}
 
+	.mobile-only {
+		@media screen and (min-width: 720px) {
+			display: none;
+		}
+	}
+
 	h1 {
 		font-size: 140px;
 
@@ -179,6 +185,8 @@
 		background-image: url('/background2.jpeg');
 		background-repeat: repeat-y;
 		background-size: cover;
+
+		border-bottom: 4px solid #8ceb27;
 	}
 
 	.background-three {
@@ -248,14 +256,16 @@
 		flex-flow: row wrap;
 
 		justify-content: space-around;
-		// margin: 0 -32px;
+		margin: 0 -16px;
 		margin-top: 32px;
 
 		img {
 			flex-grow: 1;
 
-			min-width: 256px;
-			max-width: 332px; // empirical
+			min-width: 280px;
+			max-width: 300px;
+
+			margin: 32px;
 
 			@media screen and (max-width: 720px) {
 				max-width: 80vw;

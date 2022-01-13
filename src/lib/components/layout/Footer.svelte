@@ -17,9 +17,17 @@
 		<h4>contract coming soon</h4>
 
 		<div class="row">
-			<Button inverted={true} on:click={joinDiscord}
-				>{showComingSoon ? 'COMING SOON!' : 'JOIN OUR DISCORD'}</Button
-			>
+			<div class="desktop-only">
+				<Button inverted={true} on:click={joinDiscord}
+					>{showComingSoon ? 'COMING SOON!' : 'JOIN OUR DISCORD'}</Button
+				>
+			</div>
+
+			<div class="mobile-only">
+				<Button inverted={true} on:click={joinDiscord}
+					>{showComingSoon ? 'COMING SOON!' : 'JOIN DISCORD'}</Button
+				>
+			</div>
 
 			<div style="width: 16px;" />
 
@@ -109,10 +117,32 @@
 			width: 60px;
 			height: 60px;
 
+			@media screen and (max-width: 720px) {
+				width: 48px;
+				height: 48px;
+			}
+
 			img {
 				width: 28px;
 				height: 28px;
+
+				@media screen and (max-width: 720px) {
+					width: 20px;
+					height: 20px;
+				}
 			}
+		}
+	}
+
+	.desktop-only {
+		@media screen and (max-width: 720px) {
+			display: none;
+		}
+	}
+
+	.mobile-only {
+		@media screen and (min-width: 720px) {
+			display: none;
 		}
 	}
 </style>
