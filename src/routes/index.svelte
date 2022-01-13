@@ -172,22 +172,22 @@
 	}
 
 	.background-one {
-		background-image: url('background1.jpeg');
+		background-image: url('/background1.jpeg');
 		background-position-y: bottom;
 	}
 
 	.background-two {
-		background-image: url('background2.jpeg');
+		background-image: url('/background2.jpeg');
 		background-repeat: repeat-y;
 	}
 
 	.background-three {
-		background-image: url('background3.jpeg');
+		background-image: url('/background3.jpeg');
 		background-position-y: bottom;
 	}
 
 	.background-four {
-		background-image: url('background4.jpeg');
+		background-image: url('/background4.jpeg');
 		background-repeat: repeat-y;
 	}
 
