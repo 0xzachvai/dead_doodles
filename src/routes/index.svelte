@@ -49,7 +49,7 @@
 			<h2>Unleash the Undead</h2>
 
 			<h3 style="color: white">SUPPLY OF 4,000 UNDEAD DOODLES</h3>
-			<h3 style="color: white">10 MINTS PER WALLET, FIRST 1,000 ARE FREE</h3>
+			<h3 style="color: white">20 MINTS PER WALLET, FIRST 1,000 ARE FREE</h3>
 			<h3 style="color: white">REST ARE SOLD AT 0.019 ETH</h3>
 		</div>
 	</Content>
