@@ -62,7 +62,7 @@
 
 			<div>
 				<img src="/bone-solid.png" />
-				<p style="color: white">UNDEAD DOODLES LAUNCH – 1,000 FREE MINTS, 3,333 TOTAL</p>
+				<p style="color: white">UNDEAD DOODLES LAUNCH – 1,000 FREE MINTS, 4,000 TOTAL</p>
 			</div>
 
 			<div>
