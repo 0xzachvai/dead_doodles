@@ -37,7 +37,7 @@
 			<div class="nft-row">
 				<img src="/nfts/nft7.jpeg" />
 				<img src="/nfts/nft6.jpeg" />
-				<img src="/nfts/nft3.jpeg" />
+				<img src="/nfts/nft9.jpeg" />
 			</div>
 		</div>
 	</Content>
@@ -68,13 +68,23 @@
 			<div>
 				<img src="/bone.png" />
 				<p style="color: white">
-					OPENSEA ROYALTY DONATION – WEEKLY ROYALTY DONATION TO DISCORD MEMBER
+					OPENSEA ROYALTY DISTRIBUTION – WEEKLY ROYALTY DISTRIBUTION TO DISCORD MEMBER
 				</p>
 			</div>
 
 			<div>
 				<img src="/bone.png" />
 				<p style="color: white">INVESTING IN COMMUNITY PROJECTS</p>
+			</div>
+
+			<div>
+				<img src="/bone.png" />
+				<p style="color: white">More utility to be announced based off of community polls</p>
+			</div>
+
+			<div>
+				<img src="/bone.png" />
+				<p style="color: white">A percentage of our earnings will be donated to the Doodle Bank</p>
 			</div>
 		</Content>
 	</div>
@@ -105,7 +115,7 @@
 				<p>ROSARIO</p>
 			</div>
 			<div class="teammate">
-				<img src="/nfts/nft2.jpeg" />
+				<img src="/nfts/nft10.jpeg" />
 				<p>CASHAWI</p>
 			</div>
 		</div>

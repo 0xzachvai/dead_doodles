@@ -25,8 +25,7 @@
 		<div class="icons">
 			<button
 				on:click={() => {
-					alert('Coming soon!');
-					// open('https://twitter.com', 'blank');
+					open('https://opensea.io/collection/undeaddoodles?tab=activity', 'blank');
 				}}
 			>
 				<img src="/icons/opensea.png" width="24px" />
@@ -41,7 +40,6 @@
 			>
 				<img src="/icons/twitter.svg" width="24px" />
 			</button>
-			<!-- <Button circular={true}><img src="/icons/twitter.svg" width="48px" height="48px" /></Button> -->
 		</div>
 	</header>
 </Content>

@@ -34,8 +34,7 @@
 			<div class="icons">
 				<button
 					on:click={() => {
-						alert('Coming soon!');
-						// open('https://twitter.com', 'blank');
+						open('https://opensea.io/collection/undeaddoodles?tab=activity', 'blank');
 					}}
 				>
 					<img src="/icons/opensea.png" width="24px" />
