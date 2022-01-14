@@ -199,14 +199,15 @@
 
 	.background-three {
 		background-image: url('/background3.jpeg');
-		background-position-y: bottom;
-		background-size: cover;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
 	.background-four {
 		background-image: url('/background4.jpeg');
 		background-repeat: repeat-y;
-		background-size: cover;
+		background-size: contain;
 	}
 
 	.section {
