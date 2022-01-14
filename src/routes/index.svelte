@@ -186,13 +186,14 @@
 	.background-one {
 		background-image: url('/background1.jpeg');
 		background-position-y: bottom;
-		background-size: cover;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 
 	.background-two {
 		background-image: url('/background2.jpeg');
 		background-repeat: repeat-y;
-		background-size: cover;
+		background-size: contain;
 
 		border-bottom: 4px solid #8ceb27;
 	}
