@@ -8,11 +8,13 @@ contract UndeadDoodle is ERC721, ERC721Enumerable {
 	uint256 constant FREE_SUPPLY = 1000;
 	uint256 constant MAX_SUPPLY = 4000;
 
-	address constant owner = 0x6de102DaFe252Dab158EEbac2Bd2819d562D6929;
+	address immutable owner;
 
 	uint256 id = 0;
 
-	constructor() ERC721('Undead Doodles', 'UDD') {}
+	constructor() ERC721('Undead Doodles', 'UDD') {
+		owner = msg.sender;
+	}
 
 	function _baseURI() internal pure override returns (string memory) {
 		return 'https://deaddoodles.com/tokens/';
@@ -44,5 +46,11 @@ contract UndeadDoodle is ERC721, ERC721Enumerable {
 		returns (bool)
 	{
 		return super.supportsInterface(interfaceId);
+	}
+
+	// Owner
+
+	function owner() external returns (address) {
+		return owner;
 	}
 }

@@ -35,7 +35,7 @@
 		<div class="section">
 			<h3>A COLLECTION OF 4,000 UNDEAD DOODLE NFTS ON THE ETHEREUM BLOCKCHAIN</h3>
 			<div class="nft-row">
-				<img src="/nfts/nft7.jpeg" />
+				<img src="/nfts/nft1.jpeg" />
 				<img src="/nfts/nft6.jpeg" />
 				<img src="/nfts/nft9.jpeg" />
 			</div>
@@ -50,7 +50,7 @@
 
 			<h3 style="color: white">SUPPLY OF 4,000 UNDEAD DOODLES</h3>
 			<h3 style="color: white">20 MINTS PER WALLET, FIRST 1,000 ARE FREE</h3>
-			<h3 style="color: white">REST ARE SOLD AT 0.019 ETH</h3>
+			<h3 style="color: white">REST ARE SOLD AT A PRICE TBA</h3>
 		</div>
 	</Content>
 </div>
@@ -68,7 +68,7 @@
 			<div>
 				<img src="/bone.png" />
 				<p style="color: white">
-					OPENSEA ROYALTY DISTRIBUTION – WEEKLY ROYALTY DISTRIBUTION TO DISCORD MEMBERS
+					OPENSEA ROYALTY DISTRIBUTION – WEEKLY ROYALTY DISTRIBUTION TO UNDEAD HOLDERS
 				</p>
 			</div>
 
@@ -100,7 +100,7 @@
 				<p>ZOOZ</p>
 			</div>
 			<div class="teammate">
-				<img src="/nfts/nft4.jpeg" />
+				<img src="/nfts/nft11.jpeg" />
 				<p>Minccino</p>
 			</div>
 			<div class="teammate">
@@ -111,7 +111,7 @@
 
 		<div class="team-row-two">
 			<div class="teammate">
-				<img src="/nfts/nft1.jpeg" />
+				<img src="/nfts/nft12.jpeg" />
 				<p>ROSARIO</p>
 			</div>
 			<div class="teammate">
@@ -186,29 +186,45 @@
 	.background-one {
 		background-image: url('/background1.jpeg');
 		background-position-y: bottom;
-		background-size: contain;
+		background-size: cover;
 		background-repeat: no-repeat;
+
+		@media screen and (max-width: 720px) {
+			background-size: contain;
+		}
 	}
 
 	.background-two {
 		background-image: url('/background2.jpeg');
 		background-repeat: repeat-y;
-		background-size: contain;
+		background-size: cover;
 
 		border-bottom: 4px solid #8ceb27;
+
+		@media screen and (max-width: 720px) {
+			background-size: contain;
+		}
 	}
 
 	.background-three {
 		background-image: url('/background3.jpeg');
 		background-position: bottom;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
+
+		@media screen and (max-width: 720px) {
+			background-size: contain;
+		}
 	}
 
 	.background-four {
 		background-image: url('/background4.jpeg');
 		background-repeat: repeat-y;
-		background-size: contain;
+		background-size: cover;
+
+		@media screen and (max-width: 720px) {
+			background-size: contain;
+		}
 	}
 
 	.section {

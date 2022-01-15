@@ -1,13 +1,8 @@
 <script>
 	import Button from '../shared/Button.svelte';
 
-	let showComingSoon = false;
-
 	function joinDiscord() {
-		showComingSoon = true;
-		setTimeout(() => {
-			showComingSoon = false;
-		}, 2000);
+		open('https://discord.gg/undeaddoodles', 'blank');
 	}
 </script>
 
@@ -18,15 +13,11 @@
 
 		<div class="row">
 			<div class="desktop-only">
-				<Button inverted={true} on:click={joinDiscord}
-					>{showComingSoon ? 'COMING SOON!' : 'JOIN OUR DISCORD'}</Button
-				>
+				<Button inverted={true} on:click={joinDiscord}>JOIN OUR DISCORD</Button>
 			</div>
 
 			<div class="mobile-only">
-				<Button inverted={true} on:click={joinDiscord}
-					>{showComingSoon ? 'COMING SOON!' : 'JOIN DISCORD'}</Button
-				>
+				<Button inverted={true} on:click={joinDiscord}>JOIN DISCORD</Button>
 			</div>
 
 			<div style="width: 16px;" />
