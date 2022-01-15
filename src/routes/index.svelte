@@ -290,8 +290,6 @@
 
 			min-width: 240px;
 			max-width: 300px;
-			max-height: 300px;
-			aspect-ratio: 1;
 
 			margin: 32px;
 
@@ -390,8 +388,6 @@
 			flex-grow: 1;
 			min-width: 240px;
 			max-width: 300px;
-			max-height: 300px;
-			aspect-ratio: 1;
 
 			margin: 32px;
 
