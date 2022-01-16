@@ -1,4 +1,8 @@
-<button on:click><slot /></button>
+<script lang="ts">
+	export let expanded = false;
+</script>
+
+<button on:click class={expanded ? 'expanded' : ''}><slot /></button>
 
 <style lang="scss">
 	button {
@@ -30,5 +34,9 @@
 			margin-top: 32px;
 			font-size: 32px;
 		}
+	}
+
+	.expanded {
+		width: 100%;
 	}
 </style>

@@ -2,16 +2,16 @@
 	import Content from '$lib/components/layout/Content.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 	import Header from '$lib/components/layout/Header.svelte';
+	import MintSection from '$lib/components/MintSection.svelte';
 	import InvertedButton from '$lib/components/shared/InvertedButton.svelte';
+	import Nft from '$lib/contracts/nft';
 
-	function connectWallet() {
-		showT = true;
-		setTimeout(() => {
-			showT = false;
-		}, 2000);
+	let connected = false;
+
+	async function connectWallet() {
+		await Nft.connectWallet();
+		connected = true;
 	}
-
-	let showT = false;
 </script>
 
 <Header />
@@ -21,11 +21,11 @@
 		<div class="section section-title">
 			<h1>Undead Doodles</h1>
 
-			<div class="hiding-button">
-				<InvertedButton on:click={connectWallet}
-					>{showT ? 'COMING SOON!' : 'CONNECT WALLET'}</InvertedButton
-				>
-			</div>
+			{#if !connected}
+				<InvertedButton on:click={connectWallet}>CONNECT WALLET</InvertedButton>
+			{:else}
+				<MintSection />
+			{/if}
 		</div>
 	</Content>
 </div>
