@@ -28,7 +28,7 @@ module Nft {
         let totalSupply = await getMinted()
         let paidTokens = 1000
 
-        await contract.mint(amount)
+        return await contract.mint(amount)
     }
 }
 

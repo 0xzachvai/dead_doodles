@@ -5,9 +5,22 @@
 
 	let tokensMinted = 0;
 	let mintAmount = 1;
+	let minting = false;
+	let minted = false;
+
+	$: mintString = minted ? 'Minted!' : !minting ? `MINT ${mintAmount}` : 'Minting...';
 
 	async function mintToken() {
-		Nft.mint(mintAmount);
+		minting = true;
+		const tx = await Nft.mint(mintAmount);
+
+		await tx.wait();
+		minting = false;
+		minted = true;
+
+		setTimeout(() => {
+			minted = false;
+		}, 2000);
 	}
 
 	onMount(() => {
@@ -27,7 +40,7 @@
 	<br />
 	<br />
 	<div class="but">
-		<InvertedButton on:click={() => mintToken()}>MINT {mintAmount}</InvertedButton>
+		<InvertedButton on:click={() => mintToken()}>{mintString}</InvertedButton>
 	</div>
 </div>
 
