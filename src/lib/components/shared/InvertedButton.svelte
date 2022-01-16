@@ -27,11 +27,8 @@
 		color: #262d37;
 		font-size: 48px;
 
-		// specific to index
-		margin-top: -56px;
-
 		@media screen and (max-width: 720px) {
-			margin-top: 32px;
+			// margin-top: 32px;
 			font-size: 32px;
 		}
 	}

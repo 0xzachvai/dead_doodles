@@ -35,10 +35,8 @@
 	<br />
 
 	<input class="slider" type="range" min="1" max="20" bind:value={mintAmount} />
+	<h2>slide to mint</h2>
 
-	<br />
-	<br />
-	<br />
 	<div class="but">
 		<InvertedButton on:click={() => mintToken()}>{mintString}</InvertedButton>
 	</div>
