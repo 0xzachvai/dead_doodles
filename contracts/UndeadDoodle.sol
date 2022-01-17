@@ -17,16 +17,20 @@ contract UndeadDoodle is ERC721, ERC721Enumerable {
 	}
 
 	function _baseURI() internal pure override returns (string memory) {
-		return 'https://deaddoodles.com/tokens/';
-	}
+        return "https://undeaddoodles.com/tokens/";
+    }
 
-	function mint() external payable {
+	function mint(uint256 _amount) external payable {
+		require(_amount > 0 && _amount <= 20, 'Amount must be between 0 and 20 tokens.');
 		require(id < MAX_SUPPLY, 'All tokens have been minted.');
 		require(id < FREE_SUPPLY || msg.value > 0, 'All free tokens have been minted.');
 
-		_safeMint(msg.sender, id);
 		payable(owner).transfer(msg.value);
-		id++;
+
+		for (uint i = 0; i < _amount; i++) {
+			_safeMint(msg.sender, id);
+			id++;
+		}
 	}
 
 	// The following overrides required.
@@ -46,11 +50,5 @@ contract UndeadDoodle is ERC721, ERC721Enumerable {
 		returns (bool)
 	{
 		return super.supportsInterface(interfaceId);
-	}
-
-	// Owner
-
-	function owner() external returns (address) {
-		return owner;
 	}
 }

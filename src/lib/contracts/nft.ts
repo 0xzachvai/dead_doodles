@@ -2,8 +2,8 @@ import { ethers } from "ethers"
 import NFT_ABI from "./abi"
 
 module Nft {
-    const NFT_ADDRESS = "0x9Cf74e3B1A5240d7CdB4ac7c07332ceCB6c10Ebb"
-    const TOKEN_PRICE = ethers.utils.parseEther("0.025")
+    const NFT_ADDRESS = "0x7Ce3CcAb165Ff4553810723eA275F8B3d4f36ccc"
+    const TOKEN_PRICE = ethers.utils.parseEther("0.023")
 
     let contract
 
@@ -23,13 +23,20 @@ module Nft {
     export async function mint(amount: number) {
         if (contract == null) await connectWallet()
 
-        // TODO: calculate ether price
-
+        // calculate ether price
         let totalSupply = await getMinted()
-        let paidTokens = 1000
+        let paidTokens = min(max((totalSupply + amount) - 1000, 0), amount)
 
-        return await contract.mint(amount)
+        return await contract.mint(amount, { value: TOKEN_PRICE.mul(paidTokens) })
     }
+}
+
+function min(a, b) {
+    return a < b ? a : b
+}
+
+function max(a, b) {
+    return a > b ? a : b
 }
 
 export default Nft

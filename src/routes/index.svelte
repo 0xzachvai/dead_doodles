@@ -50,7 +50,7 @@
 
 			<h3 style="color: white">SUPPLY OF 4,000 UNDEAD DOODLES</h3>
 			<h3 style="color: white">20 MINTS PER TRANSACTION, FIRST 1,000 ARE FREE</h3>
-			<h3 style="color: white">REST ARE SOLD AT A PRICE TBA</h3>
+			<h3 style="color: white">REST ARE SOLD AT 0.023 ETH</h3>
 		</div>
 	</Content>
 </div>
