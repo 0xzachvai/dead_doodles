@@ -12,9 +12,12 @@
 
 	async function mintToken() {
 		minting = true;
-		const tx = await Nft.mint(mintAmount);
-
-		await tx.wait();
+		try {
+			const tx = await Nft.mint(mintAmount);
+			await tx.wait();
+		} catch (e) {
+			alert('Unable to mint: check you have sufficient fundss');
+		}
 		minting = false;
 		minted = true;
 
