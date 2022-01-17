@@ -9,15 +9,15 @@ export async function get({ params }) {
 			"properties": {
 				"name": {
 					"type": "string",
-					"description": "Identifies the asset to which this NFT represents"
+					"description": "Undead Doodles"
 				},
 				"description": {
 					"type": "string",
-					"description": "Describes the asset to which this NFT represents"
+					"description": "The Undead Doodles is a collection of 4,000 NFTs minted on the Ethereum Blockchain. Each Undead Doodle NFT is hand-drawn and generated using a combination of traits."
 				},
 				"image": {
 					"type": "string",
-					"description": "https://undeaddoodles.com/tokens/images/"
+					"description": "https://undeaddoodles.com/nfts/preview.gif"
 				}
 			}
 		}
