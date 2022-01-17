@@ -25,7 +25,14 @@ module Nft {
 
         // calculate ether price
         let totalSupply = await getMinted()
-        let paidTokens = min(max((totalSupply + amount) - 1000, 0), amount)
+
+
+        let paidTokens
+        if (totalSupply < 1000) {
+            paidTokens = 0
+        } else {
+            paidTokens = min(max((totalSupply + amount) - 1000, 0), amount)
+        }
 
         return await contract.mint(amount, { value: TOKEN_PRICE.mul(paidTokens) })
     }
