@@ -16,7 +16,7 @@
 			const tx = await Nft.mint(mintAmount);
 			await tx.wait();
 		} catch (e) {
-			alert('Unable to mint: check you have sufficient fundss');
+			alert('Unable to mint: check you have sufficient funds');
 		}
 		minting = false;
 		minted = true;
