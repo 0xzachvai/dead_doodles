@@ -15,15 +15,16 @@
 		try {
 			const tx = await Nft.mint(mintAmount);
 			await tx.wait();
+
+			minting = false;
+			minted = true;
+
+			setTimeout(() => {
+				minted = false;
+			}, 2000);
 		} catch (e) {
 			alert('Unable to mint: check you have sufficient funds');
 		}
-		minting = false;
-		minted = true;
-
-		setTimeout(() => {
-			minted = false;
-		}, 2000);
 	}
 
 	onMount(() => {
