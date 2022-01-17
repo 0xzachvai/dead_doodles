@@ -9,8 +9,8 @@
 	let connected = false;
 
 	async function connectWallet() {
-		await Nft.connectWallet();
-		connected = true;
+		// await Nft.connectWallet();
+		// connected = true;
 	}
 </script>
 
