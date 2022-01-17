@@ -34,7 +34,7 @@
 	<h3>Tokens minted: {tokensMinted}/4000</h3>
 	<br />
 
-	<input class="slider" type="range" min="1" max="20" bind:value={mintAmount} />
+	<input class="slider" type="range" min="1" max="19" bind:value={mintAmount} />
 	<h2>slide to mint</h2>
 
 	<div class="but">
