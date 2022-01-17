@@ -25,7 +25,7 @@
 			<div class="icons">
 				<button
 					on:click={() => {
-						open('https://opensea.io/collection/undeaddoodles?tab=activity', 'blank');
+						open('https://opensea.io/collection/undead-doodles-v2', 'blank');
 					}}
 				>
 					<img src="/icons/opensea.png" width="24px" />
