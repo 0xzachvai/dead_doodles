@@ -80,25 +80,21 @@ for (let i = 1; i < 4001; i++) {
 
 	// console.log(data.traits)
 
-	if (data.attributes.length == 0) {
-		console.log(i);
-	}
-
-	// data.name = `Undead Doodle #${i}`;
-	// data.image = `https://undeaddoodles.com/tokens/images/${i}.jpeg`;
+	data.name = `Undead Doodle #${i}`;
+	data.image = `https://undeaddoodles.com/tokens/images/${i}.jpeg`;
 
 	// console.log(data);
-	// writeFileSync(f, JSON.stringify(data));
+	writeFileSync(f, JSON.stringify(data));
 }
 
 // let names = new Set();
 
-for (let i = 1; i < 4001; i++) {
-	let f = `./static/tokens/metadata/${i}.json`;
-	let data = JSON.parse(readFileSync(f));
+// for (let i = 1; i < 4001; i++) {
+// 	let f = `./static/tokens/metadata/${i}.json`;
+// 	let data = JSON.parse(readFileSync(f));
 
-	if (data.attributes.length == 1) console.log(data.name);
-}
+// 	if (data.attributes.length == 1) console.log(data.name);
+// }
 
 // 	if (data.attributes.length == 4) {
 // 		data.attributes[0]['trait_type'] = 'Background';
