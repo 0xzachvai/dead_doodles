@@ -49,15 +49,15 @@ import { readFileSync, renameSync, writeFileSync } from 'fs';
 // }
 
 // UPDATE METADATA
-for (let i = 1; i < 4001; i++) {
-	let f = `./static/tokens/metadata/${i}.json`;
-	let data = JSON.parse(readFileSync(f));
+// for (let i = 1; i < 4001; i++) {
+// 	let f = `./static/tokens/metadata/${i}.json`;
+// 	let data = JSON.parse(readFileSync(f));
 
-	data.name = `Undead Doodle #${i}`;
-	data.image = `https://undeaddoodles.com/tokens/images/${i}.jpeg`;
+// 	data.name = `Undead Doodle #${i}`;
+// 	data.image = `https://undeaddoodles.com/tokens/images/${i}.jpeg`;
 
-	writeFileSync(f, JSON.stringify(data));
-}
+// 	writeFileSync(f, JSON.stringify(data));
+// }
 
 // MANUAL SWAPPING
 // function swap(id1, id2) {
@@ -90,3 +90,77 @@ for (let i = 1; i < 4001; i++) {
 	// console.log(data);
 	// writeFileSync(f, JSON.stringify(data));
 }
+
+let names = new Set();
+
+for (let i = 1; i < 4001; i++) {
+	let f = `./static/tokens/metadata/${i}.json`;
+	let data = JSON.parse(readFileSync(f));
+
+	if (data.attributes.length == 0) continue;
+
+	if (!data.attributes[0]?.value?.includes('Background')) continue;
+
+	console.log(data.name);
+	console.log(data.attributes[0]);
+	console.log();
+
+	if (data.attributes[0].value == 'Background 2') {
+		data.attributes[0].value = 'Purple';
+	}
+
+	if (data.attributes[0].value == 'Background 4') {
+		data.attributes[0].value = 'Maroon';
+	}
+
+	if (data.attributes[0].value == 'Background 7') {
+		data.attributes[0].value = 'Graveyard';
+	}
+
+	if (data.attributes[0].value == 'Background 8') {
+		data.attributes[0].value = 'Gradient';
+	}
+
+	if (data.attributes[0].value == 'Background 9') {
+		data.attributes[0].value = 'Swamp';
+	}
+
+	if (data.attributes[0].value == 'Background 10') {
+		data.attributes[0].value = 'Cave';
+	}
+
+	if (data.attributes[0].value == 'Background 11') {
+		data.attributes[0].value = 'Burning City';
+	}
+
+	if (data.attributes[0].value == 'Background 7') {
+		data.attributes[0].value = 'Graveyard';
+	}
+
+	if (data.attributes[0].value == 'Background 12') {
+		data.attributes[0].value = 'Farmhouse';
+	}
+
+	if (data.attributes[0].value == 'Background 13') {
+		data.attributes[0].value = 'Burning Building';
+	}
+
+	if (data.attributes[0].value == 'Background14') {
+		data.attributes[0].value = 'Elemental Fire';
+	}
+
+	if (data.attributes[0].value == 'Background15') {
+		data.attributes[0].value = 'Purple Fog';
+	}
+
+	if (data.attributes[0].value == 'Background16') {
+		data.attributes[0].value = 'Storm';
+	}
+
+	// names.add(data.attributes[0]);
+
+	// console.log(data);
+	writeFileSync(f, JSON.stringify(data));
+}
+
+console.log(names);
