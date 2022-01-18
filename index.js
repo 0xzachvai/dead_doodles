@@ -91,77 +91,78 @@ for (let i = 1; i < 4001; i++) {
 	// writeFileSync(f, JSON.stringify(data));
 }
 
-let names = new Set();
+// let names = new Set();
 
 for (let i = 1; i < 4001; i++) {
 	let f = `./static/tokens/metadata/${i}.json`;
 	let data = JSON.parse(readFileSync(f));
 
-	if (data.attributes.length == 0) continue;
-
-	if (data.attributes.length == 4) {
-		data.attributes[0]['trait_type'] = 'Background';
-		data.attributes[1]['trait_type'] = 'Body';
-		data.attributes[2]['trait_type'] = 'Head';
-		data.attributes[3]['trait_type'] = 'Face';
-	}
-
-	// if (data.attributes[0].value == 'Background 2') {
-	// 	data.attributes[0].value = 'Purple';
-	// }
-
-	// if (data.attributes[0].value == 'Background 4') {
-	// 	data.attributes[0].value = 'Maroon';
-	// }
-
-	// if (data.attributes[0].value == 'Background 7') {
-	// 	data.attributes[0].value = 'Graveyard';
-	// }
-
-	// if (data.attributes[0].value == 'Background 8') {
-	// 	data.attributes[0].value = 'Gradient';
-	// }
-
-	// if (data.attributes[0].value == 'Background 9') {
-	// 	data.attributes[0].value = 'Swamp';
-	// }
-
-	// if (data.attributes[0].value == 'Background 10') {
-	// 	data.attributes[0].value = 'Cave';
-	// }
-
-	// if (data.attributes[0].value == 'Background 11') {
-	// 	data.attributes[0].value = 'Burning City';
-	// }
-
-	// if (data.attributes[0].value == 'Background 7') {
-	// 	data.attributes[0].value = 'Graveyard';
-	// }
-
-	// if (data.attributes[0].value == 'Background 12') {
-	// 	data.attributes[0].value = 'Farmhouse';
-	// }
-
-	// if (data.attributes[0].value == 'Background 13') {
-	// 	data.attributes[0].value = 'Burning Building';
-	// }
-
-	// if (data.attributes[0].value == 'Background14') {
-	// 	data.attributes[0].value = 'Elemental Fire';
-	// }
-
-	// if (data.attributes[0].value == 'Background15') {
-	// 	data.attributes[0].value = 'Purple Fog';
-	// }
-
-	// if (data.attributes[0].value == 'Background16') {
-	// 	data.attributes[0].value = 'Storm';
-	// }
-
-	// names.add(data.attributes[0]);
-
-	// console.log(data);
-	writeFileSync(f, JSON.stringify(data));
+	if (data.attributes.length == 1) console.log(data.name);
 }
 
-console.log(names);
+// 	if (data.attributes.length == 4) {
+// 		data.attributes[0]['trait_type'] = 'Background';
+// 		data.attributes[1]['trait_type'] = 'Body';
+// 		data.attributes[2]['trait_type'] = 'Head';
+// 		data.attributes[3]['trait_type'] = 'Face';
+// 	}
+
+// 	// if (data.attributes[0].value == 'Background 2') {
+// 	// 	data.attributes[0].value = 'Purple';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background 4') {
+// 	// 	data.attributes[0].value = 'Maroon';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background 7') {
+// 	// 	data.attributes[0].value = 'Graveyard';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background 8') {
+// 	// 	data.attributes[0].value = 'Gradient';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background 9') {
+// 	// 	data.attributes[0].value = 'Swamp';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background 10') {
+// 	// 	data.attributes[0].value = 'Cave';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background 11') {
+// 	// 	data.attributes[0].value = 'Burning City';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background 7') {
+// 	// 	data.attributes[0].value = 'Graveyard';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background 12') {
+// 	// 	data.attributes[0].value = 'Farmhouse';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background 13') {
+// 	// 	data.attributes[0].value = 'Burning Building';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background14') {
+// 	// 	data.attributes[0].value = 'Elemental Fire';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background15') {
+// 	// 	data.attributes[0].value = 'Purple Fog';
+// 	// }
+
+// 	// if (data.attributes[0].value == 'Background16') {
+// 	// 	data.attributes[0].value = 'Storm';
+// 	// }
+
+// 	// names.add(data.attributes[0]);
+
+// 	// console.log(data);
+// 	// writeFileSync(f, JSON.stringify(data));
+// }
+
+// console.log(names);
