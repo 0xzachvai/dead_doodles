@@ -23,18 +23,11 @@ module Nft {
     export async function mint(amount: number) {
         if (contract == null) await connectWallet()
 
-        // calculate ether price
-        let totalSupply = await getMinted()
+        let totalSupply: ethers.BigNumber = await getMinted()
 
-        let price = totalSupply + amount < 1461 ? 1 : TOKEN_PRICE
-        let paidTokens
-        if (totalSupply < 1000) {
-            paidTokens = 0
-        } else {
-            paidTokens = amount
-        }
+        let paidTokens = min(max((totalSupply.toNumber() + amount) - 1642, 0), amount)
 
-        return await contract.mint(amount, { value: paidTokens.mul(price) })
+        return await contract.mint(amount, { value: paidTokens.mul(TOKEN_PRICE).add(1) })
     }
 }
 
