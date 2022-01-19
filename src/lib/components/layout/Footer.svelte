@@ -9,7 +9,7 @@
 <div class="container">
 	<div class="content">
 		<h2>Join the undead community</h2>
-		<h4>0x7Ce3CcAb165Ff4553810723eA275F8B3d4f36ccc</h4>
+		<!-- <h4>0x7Ce3CcAb165Ff4553810723eA275F8B3d4f36ccc</h4> -->
 
 		<div class="row">
 			<div class="desktop-only">

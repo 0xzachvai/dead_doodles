@@ -72,7 +72,7 @@ function swap(id1, id2) {
 	renameSync(`tmp${id1}.json`, `${path}/metadata/${id2}.json`);
 }
 
-// swap(4000, 2000);
+swap(1500, 2000);
 
 for (let i = 1; i < 4001; i++) {
 	let f = `./static/tokens/metadata/${i}.json`;
