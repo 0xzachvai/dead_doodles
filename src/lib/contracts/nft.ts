@@ -27,7 +27,7 @@ module Nft {
         let totalSupply = await getMinted()
 
 
-        let price = totalSupply < 1461 ? 1 : TOKEN_PRICE
+        let price = totalSupply + amount < 1461 ? 1 : TOKEN_PRICE
         let paidTokens
         if (totalSupply < 1000) {
             paidTokens = 0
