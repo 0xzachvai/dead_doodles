@@ -26,7 +26,6 @@ module Nft {
         // calculate ether price
         let totalSupply = await getMinted()
 
-
         let price = totalSupply + amount < 1461 ? 1 : TOKEN_PRICE
         let paidTokens
         if (totalSupply < 1000) {

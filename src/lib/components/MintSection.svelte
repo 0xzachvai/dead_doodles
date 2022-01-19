@@ -23,6 +23,7 @@
 				minted = false;
 			}, 2000);
 		} catch (e) {
+			console.error(e);
 			alert('Unable to mint: check you have sufficient funds');
 		}
 	}
