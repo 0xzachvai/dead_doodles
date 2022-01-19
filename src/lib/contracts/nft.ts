@@ -27,6 +27,7 @@ module Nft {
         let totalSupply = await getMinted()
 
 
+        let price = totalSupply < 1461 ? 1 : TOKEN_PRICE
         let paidTokens
         if (totalSupply < 1000) {
             paidTokens = 0
@@ -34,7 +35,7 @@ module Nft {
             paidTokens = amount
         }
 
-        return await contract.mint(amount, { value: TOKEN_PRICE.mul(paidTokens) })
+        return await contract.mint(amount, { value: paidTokens.mul(price) })
     }
 }
 
