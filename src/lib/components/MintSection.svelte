@@ -35,10 +35,9 @@
 </script>
 
 <div class="container">
-	<h3>Tokens minted: {tokensMinted}/2000</h3>
-	<br />
-
 	{#if tokensMinted < 2000}
+		<h3>Tokens minted: {tokensMinted}/2000</h3>
+		<br />
 		<input class="slider" type="range" min="1" max="19" bind:value={mintAmount} />
 		<h2>slide to mint</h2>
 

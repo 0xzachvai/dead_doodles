@@ -49,30 +49,30 @@ import { readFileSync, renameSync, writeFileSync } from 'fs';
 // }
 
 // UPDATE METADATA
-// for (let i = 1; i < 4001; i++) {
-// 	let f = `./static/tokens/metadata/${i}.json`;
-// 	let data = JSON.parse(readFileSync(f));
+for (let i = 1; i < 4001; i++) {
+	let f = `./static/tokens/metadata/${i}.json`;
+	let data = JSON.parse(readFileSync(f));
 
-// 	data.name = `Undead Doodle #${i}`;
-// 	data.image = `https://undeaddoodles.com/tokens/images/${i}.jpeg`;
+	data.name = `Undead Doodle #${i}`;
+	data.image = `https://undeaddoodles.com/tokens/images/${i}.jpeg`;
 
-// 	writeFileSync(f, JSON.stringify(data));
-// }
+	writeFileSync(f, JSON.stringify(data));
+}
 
 // MANUAL SWAPPING
-// function swap(id1, id2) {
-// 	let path = './static/tokens';
-// 	renameSync(`${path}/images/${id1}.jpeg`, 'tmp.jpeg');
-// 	renameSync(`${path}/metadata/${id1}.json`, 'tmp.json');
+function swap(id1, id2) {
+	let path = './static/tokens';
+	renameSync(`${path}/images/${id1}.jpeg`, `tmp${id1}.jpeg`);
+	renameSync(`${path}/metadata/${id1}.json`, `tmp${id1}.json`);
 
-// 	renameSync(`${path}/images/${id2}.jpeg`, `${path}/images/${id1}.jpeg`);
-// 	renameSync(`${path}/metadata/${id2}.json`, `${path}/metadata/${id1}.json`);
+	renameSync(`${path}/images/${id2}.jpeg`, `${path}/images/${id1}.jpeg`);
+	renameSync(`${path}/metadata/${id2}.json`, `${path}/metadata/${id1}.json`);
 
-// 	renameSync('tmp.jpeg', `${path}/images/${id1}.jpeg`);
-// 	renameSync('tmp.json', `${path}/metadata/${id2}.json`);
-// }
+	renameSync(`tmp${id1}.jpeg`, `${path}/images/${id1}.jpeg`);
+	renameSync(`tmp${id1}.json`, `${path}/metadata/${id2}.json`);
+}
 
-// swap(1058, 2656);
+// swap(4000, 2000);
 
 for (let i = 1; i < 4001; i++) {
 	let f = `./static/tokens/metadata/${i}.json`;
@@ -80,11 +80,15 @@ for (let i = 1; i < 4001; i++) {
 
 	// console.log(data.traits)
 
-	data.name = `Undead Doodle #${i}`;
-	data.image = `https://undeaddoodles.com/tokens/images/${i}.jpeg`;
+	if (data.attributes.length == 1) {
+		console.log(data.name);
+	}
+
+	// data.name = `Undead Doodle #${i}`;
+	// data.image = `https://undeaddoodles.com/tokens/images/${i}.jpeg`;
 
 	// console.log(data);
-	writeFileSync(f, JSON.stringify(data));
+	// writeFileSync(f, JSON.stringify(data));
 }
 
 // let names = new Set();
