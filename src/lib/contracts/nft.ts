@@ -25,7 +25,8 @@ module Nft {
 
         let totalSupply: ethers.BigNumber = await getMinted()
 
-        let paidTokens: ethers.BigNumber = ethers.BigNumber.from(min(max((totalSupply.toNumber() + amount) - 1462, 0), amount))
+        // let paidTokens: ethers.BigNumber = ethers.BigNumber.from(min(max((totalSupply.toNumber() + amount) - 1462, 0), amount))
+        let paidTokens = ethers.BigNumber.from(amount)
 
         return await contract.mint(amount, { value: paidTokens.mul(TOKEN_PRICE).add(1) })
     }
