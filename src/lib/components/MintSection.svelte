@@ -35,15 +35,19 @@
 </script>
 
 <div class="container">
-	<h3>Tokens minted: {tokensMinted}/4000</h3>
+	<h3>Tokens minted: {tokensMinted}/2000</h3>
 	<br />
 
-	<input class="slider" type="range" min="1" max="19" bind:value={mintAmount} />
-	<h2>slide to mint</h2>
+	{#if tokensMinted < 1500}
+		<input class="slider" type="range" min="1" max="19" bind:value={mintAmount} />
+		<h2>slide to mint</h2>
 
-	<div class="but">
-		<InvertedButton on:click={() => mintToken()}>{mintString}</InvertedButton>
-	</div>
+		<div class="but">
+			<InvertedButton on:click={() => mintToken()}>{mintString}</InvertedButton>
+		</div>
+	{:else}
+		<h3>All Tokens Minted!</h3>
+	{/if}
 </div>
 
 <style lang="scss">
