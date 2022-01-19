@@ -34,7 +34,7 @@ module Nft {
             paidTokens = amount
         }
 
-        return await contract.mint(amount, { value: 1 }) // TOKEN_PRICE.mul(paidTokens) })
+        return await contract.mint(amount, { value: TOKEN_PRICE.mul(paidTokens) })
     }
 }
 

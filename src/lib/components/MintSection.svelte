@@ -35,7 +35,7 @@
 </script>
 
 <div class="container">
-	<h3>Tokens minted: {tokensMinted}/2000</h3>
+	<h3>Tokens minted: {tokensMinted}/2222</h3>
 	<br />
 
 	{#if tokensMinted < 1500}
