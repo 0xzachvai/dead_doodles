@@ -80,15 +80,18 @@ for (let i = 1; i < 4001; i++) {
 
 	// console.log(data.traits)
 
-	if (data.attributes.length == 1) {
-		console.log(data.name);
-	}
+	// if (data.attributes.length == 1) {
+	// 	console.log(data.name);
+	// }
+
+	data.description =
+		'The Undead Doodles is a collection of 1,515 NFTs minted on the Ethereum Blockchain. Each Undead Doodle NFT is hand-drawn and generated using a combination of traits.';
 
 	// data.name = `Undead Doodle #${i}`;
 	// data.image = `https://undeaddoodles.com/tokens/images/${i}.jpeg`;
 
 	// console.log(data);
-	// writeFileSync(f, JSON.stringify(data));
+	writeFileSync(f, JSON.stringify(data));
 }
 
 // let names = new Set();
