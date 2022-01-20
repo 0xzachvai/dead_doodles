@@ -48,7 +48,7 @@
 	{:else}
 		<h3>All Tokens Minted!</h3>
 		<br />
-		<h2>Get one on <a href="https://opensea.io/collections/undeaddoodles">OpenSea!</a></h2>
+		<h2>Get one on <a href="https://opensea.io/collection/undeaddoodles">OpenSea!</a></h2>
 	{/if}
 </div>
 
