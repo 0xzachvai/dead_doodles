@@ -36,7 +36,7 @@
 </script>
 
 <div class="container">
-	{#if tokensMinted < 1500}
+	{#if tokensMinted < 1515}
 		<h3>Tokens minted: {tokensMinted}/1500</h3>
 		<br />
 		<input class="slider" type="range" min="1" max="19" bind:value={mintAmount} />
