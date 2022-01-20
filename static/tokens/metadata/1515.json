@@ -1,1 +1,10 @@
-{"name":"Undead Doodle #1515","description":"The Undead Doodles is a collection of 4,000 NFTs minted on the Ethereum Blockchain. Each Undead Doodle NFT is hand-drawn and generated using a combination of traits.","fee_recipient":"0x7Ce3CcAb165Ff4553810723eA275F8B3d4f36ccc","seller_fee_basis_points":500,"image":"https://undeaddoodles.com/tokens/images/1515.jpeg","external_url":"","attributes":[{"trait_type":"Background","value":"Grey"},{"trait_type":"Body","value":"Turtleneck Blue"},{"trait_type":"Head","value":"Yellow"},{"trait_type":"Earring","value":"Purple"},{"trait_type":"Hair","value":"Purple Hair"},{"trait_type":"Face","value":"Chill"}],"hash":"dca2f72715e1757c435b2372aeac89cf"}
+{
+	"name": "Undead Doodle #1515",
+	"description": "The Undead Doodles is a collection of 4,000 NFTs minted on the Ethereum Blockchain. Each Undead Doodle NFT is hand-drawn and generated using a combination of traits.",
+	"fee_recipient": "0x7Ce3CcAb165Ff4553810723eA275F8B3d4f36ccc",
+	"seller_fee_basis_points": 500,
+	"image": "https://undeaddoodles.com/tokens/images/1475.jpeg",
+	"external_url": "",
+	"attributes": [{ "trait_type": "Name", "value": "Eternal Flame" }],
+	"hash": "b5289649900bec11a7068a0a22937362"
+}
